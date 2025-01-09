@@ -49,12 +49,94 @@ We would like to extend our thanks to the following sponsors for funding Laravel
 - **[byte5](https://byte5.de)**
 - **[OP.GG](https://op.gg)**
 
+# Requirements
+
+**PHP**: 8.2+
+
+**Laravel**: 11.0.0+
+
+**Nodejs**: 23.0.0+
+
+**Composer**: Latest
+
+# Installation on System
+
+### Environment Creation
+
+At First, We need to have PHP 8.2+ with some extension enable from the ```php.ini``` . PHP can be download from the website for Windows. And By using Command, PHP can be installed on the Ubuntu.
+
+- [PHP for Windows](https://windows.php.net/download/) (**VS16 x64 Non Thread Safe Recommanded**)
+
+- [Ubuntu PHP Installation Guide](https://dev.to/sureshramani/how-to-install-php-82-on-ubuntu-2204-4ih6)
+
+**(Make sure sqlite extension are enable as we need it)**
+
+
+### Installing NodeJS and Composer
+
+This Project needs NodeJS and Composer for installing Packages.
+
+ - [Composer Installing Documentation](https://getcomposer.org/download/)
+ - [Nodejs Installing Documentation](https://nodejs.org/en/download/package-manager)
+
+
+### Project Development
+
+To develop this Project, First we need to download this project using ```<> code``` Button on Github.
+
+OR
+
+You can Follow the steps on your git.
+
+1. First Open Terminal/CMD, On your OS/ platform
+2. Create a new folder where you will develop the project.
+3. Install Git if you dont have it already
+4. Use git clone to clone the project
+
+```
+git clone https://github.com/mdshsgit/project470.git
+```
+
+5. Open the project folder on Terminl/CMD. You can also use ``` cd /path/to/the/project-dir``` to navigate the terminal on you project
+
+-----
+6. Use composer install or composer update to update the dependencies.
+
+```
+composer update
+```
+7. Use npm install or nom update to update the dependencies.
+```
+npm update
+```
+
+8. Create your .env file and update database details. Migrate the database if already doesnt have.
+
+```
+php artisan migrate
+```
+
+9. Build your project for the initial view. (Optional For Development Mode)
+```
+npm run build
+```
+10. Deploy the View using php
+
+```
+php artisan serve
+```
+
+--- For Development Purpose ---
+
+11. Open another terminal on the project file and give development command of the nodejs
+
+```
+npm run dev
+```
+
 ## Contributing
 
 Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Git Clone
-git clone "https://github.com/mdshsgit/project470.git"
 
 ## Code of Conduct
 
